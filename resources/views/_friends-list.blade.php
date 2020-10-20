@@ -4,9 +4,12 @@
         <li class="mb-4">
             <div class="flex items-center text-sm">
                 <a href="{{route('profile', $user)}}">
-                    <img src="{{ asset('images/default_avatar.jpg') }}" 
+                    <img src="{{ asset('images/hd_avatar.jpg') }}" 
                     alt=""
-                    class="rounded-full mr-2">
+                    class="rounded-full mr-2"
+                    width="40"
+                    height="25"
+                    >
                 </a>
                 <a href="{{route('profile', $user)}}">
                 {{$user->name}}

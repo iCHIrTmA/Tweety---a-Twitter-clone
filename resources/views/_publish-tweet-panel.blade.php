@@ -11,9 +11,11 @@
 
         <footer class="flex justify-between">
             <img 
-                src="{{ asset('images/default_avatar.jpg') }}"  
+                src="{{ asset('images/hd_avatar.jpg') }}"  
                 alt="your avatar" 
                 class="rounded-full mr-2"
+                width="55"
+                height="40" 
             >
         <button type="submit" class="bg-blue-500 rounded-lg shadow py-2 px-2 text-white">
         Tweet-a-roo!

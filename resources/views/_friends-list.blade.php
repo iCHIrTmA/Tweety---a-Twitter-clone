@@ -3,7 +3,7 @@
     @foreach(range(1, 8) as $index)
         <li class="mb-4">
             <div class="flex items-center text-sm">
-                <img src="images/hello.jpg" 
+                <img src="images/default_avatar.jpg" 
                 alt=""
                 class="rounded-full mr-2">
                 John Doe

@@ -10,7 +10,7 @@
 
         <footer class="flex justify-between">
             <img 
-                src="images/hello.jpg"  
+                src="images/default_avatar.jpg"  
                 alt="" 
                 class="rounded-full mr-2"
             >

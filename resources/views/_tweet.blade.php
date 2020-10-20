@@ -9,8 +9,8 @@
     </div>
 
     <div>
-        <h5 class="font-bold mb-4">John Doe</h5>
-        <p class="text-sm">Presumably, if you're watching this series, you've already made the decision to embrace all that Laravel has to offer. However, if you're still on the fence, give me just a moment to sell you on why I believe Laravel is the best framework choice in the PHP world.
-        </p>
+        <h5 class="font-bold mb-4">{{$tweet->user->name}}</h5>
+
+        <p class="text-sm">{{$tweet->body}}</p>
     </div>   
 </div>

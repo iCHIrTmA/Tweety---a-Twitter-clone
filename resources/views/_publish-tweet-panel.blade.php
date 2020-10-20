@@ -1,7 +1,4 @@
-{{-- @extends('layouts.app') --}}
-
-{{-- @section('content') --}}
-<div class="border border-blue-400 rounded-lg px-8 py-6">
+<div class="border border-blue-400 rounded-lg px-8 py-6 mb-8">
     <form action="">
         <textarea 
         name="body"
@@ -23,4 +20,3 @@
 
     </form>
 </div>
-{{-- @endsection --}}

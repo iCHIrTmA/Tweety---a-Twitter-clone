@@ -1,6 +1,6 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app') --}}
 
-@section('content')
+{{-- @section('content') --}}
 <div class="border border-blue-400 rounded-lg px-8 py-6">
     <form action="">
         <textarea 
@@ -13,7 +13,7 @@
 
         <footer class="flex justify-between">
             <img 
-                src="https://i.pravatar.cc/40" 
+                src="images/hello.jpg"  
                 alt="" 
                 class="rounded-full mr-2"
             >
@@ -23,4 +23,4 @@
 
     </form>
 </div>
-@endsection
+{{-- @endsection --}}

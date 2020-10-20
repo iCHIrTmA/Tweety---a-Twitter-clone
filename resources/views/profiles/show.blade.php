@@ -35,10 +35,10 @@
             </div>
         </div>
         <img 
-            src="{{ asset('images/default_avatar.jpg') }}"  
+            src="{{ asset('images/hd_avatar.jpg') }}"  
             alt="your avatar" 
             class="rounded-full mr-2 absolute"
-            {{-- style="width: 150px; "  --}}
+            style="width: 150px; left: calc(50% - 80px); top: 42%" 
         >
 
         <p class="text-sm">

@@ -23,11 +23,11 @@
             </div>
 
             <div class="flex">
-                {{-- @can ('edit', $user) --}}
+                @can ('edit', $user)
                     <a href=""
                        class="rounded-full border border-gray-300 py-2 px-4 text-black text-xs mr-2">
                    Edit Profile</a>
-                {{-- @endcan --}}
+                @endcan
 
                 <form method="POST" action="{{url('profiles/'. $user->name .'/follow')}}">
                     @csrf
@@ -35,7 +35,7 @@
                         type="submit"
                         class="bg-blue-500 rounded-full shadow py-2 px-4 text-white text-xs mr-2"
                     >
-                    Follow me
+                    {{auth()->user()->following($user) ? 'Unfollow me' : 'Follow me'}}
                 </button></form>
             </div>
         </div>

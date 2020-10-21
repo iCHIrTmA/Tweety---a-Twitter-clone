@@ -26,17 +26,12 @@
                 @can ('edit', $user)
                     <a href=""
                        class="rounded-full border border-gray-300 py-2 px-4 text-black text-xs mr-2">
-                   Edit Profile</a>
+                   Edit Profile
+                    </a>
                 @endcan
 
-                <form method="POST" action="{{url('profiles/'. $user->name .'/follow')}}">
-                    @csrf
-                    <button
-                        type="submit"
-                        class="bg-blue-500 rounded-full shadow py-2 px-4 text-white text-xs mr-2"
-                    >
-                    {{auth()->user()->following($user) ? 'Unfollow me' : 'Follow me'}}
-                </button></form>
+                <x-follow-button :user="$user"></x-follow-button>
+
             </div>
         </div>
         <img 

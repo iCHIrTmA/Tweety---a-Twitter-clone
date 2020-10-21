@@ -8,7 +8,7 @@
                   class="mb-2"
             >
 
-            <img src="{{ asset('images/default-avatar.jpg') }}"
+            <img src="{{ asset('images/hd_avatar.jpg') }}"
                  alt=""
                  class="rounded-full mr-2 absolute bottom-0 transform -translate-x-1/2 translate-y-1/2"
                  style="left: 50%"
@@ -35,8 +35,8 @@
             </div>
         </div>
         <img 
-            src="{{ asset('images/hd_avatar.jpg') }}"  
-            alt="your avatar" 
+            src="{{ asset('images/avatar.jpg') }}"  
+            alt="" 
             class="rounded-full mr-2 absolute"
             style="width: 150px; left: calc(50% - 80px); top: 42%" 
         >

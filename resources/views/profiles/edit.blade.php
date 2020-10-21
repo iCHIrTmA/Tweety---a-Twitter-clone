@@ -1,5 +1,6 @@
 <x-app>
-    <form method="POST" action="{{ $user->path() }}" enctype="multipart/form-data">
+  Edit the profile
+    {{-- <form method="POST" action="{{ $user->path() }}" enctype="multipart/form-data">
         @csrf
         @method('PATCH')
 
@@ -137,5 +138,5 @@
 
             <a href="{{ $user->path() }}" class="hover:underline">Cancel</a>
         </div>
-    </form>
+    </form> --}}
 </x-app>

@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('css/main.css', 'Laravel') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -23,20 +23,11 @@
     <div id="app">
         <section class="px-8 py-4 mb-6">
             <header class="container mx-auto">
-                <h1>
-                    <a href="/tweets">
-                        <img
-                            src="/images/logo.svg"
-                            alt="Tweety"
-                        >
-                    </a>
-                </h1>
+                <h1><img src="{{ asset('images/logo.svg') }}" alt="Tweety"></h1>
             </header>
         </section>
 
-        {{ $slot }}
+        {{{$slot}}}
     </div>
-
-    <script src="http://unpkg.com/turbolinks"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
-@extends('layouts.app')
+<x-app>{{-- @extends('layouts.app')
 
-@section('content')
+@section('content') --}}
     <header class="mb-6 relative">
         <div class="relative">
             <img src="{{ asset('images/default-profile-banner.jpg') }}" 
@@ -54,4 +54,5 @@
     @include('_timeline', [
         'tweets' => $user->tweets
     ])
-@endsection
+{{-- @endsection --}}
+</x-app>

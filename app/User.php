@@ -37,6 +37,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function getAvatarAttribute($value){
+        return asset('storage/' . $value);
+    }
+
     public function timeline(){
         $friends = $this->follows()->pluck('id');
         // $ids->push($this->id);

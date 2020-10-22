@@ -1,6 +1,4 @@
-<x-app>{{-- @extends('layouts.app')
-
-@section('content') --}}
+<x-app>
     <header class="mb-6 relative">
         <div class="relative">
             <img src="{{ asset('images/default-profile-banner.jpg') }}" 
@@ -8,7 +6,7 @@
                   class="mb-2"
             >
 
-            <img src="{{ asset('images/hd_avatar.jpg') }}"
+            <img src="{{ $user->avatar }}"
                  alt=""
                  class="rounded-full mr-2 absolute bottom-0 transform -translate-x-1/2 translate-y-1/2"
                  style="left: 50%"
@@ -35,12 +33,6 @@
 
             </div>
         </div>
-        <img 
-            src="{{ asset('images/avatar.jpg') }}"  
-            alt="" 
-            class="rounded-full mr-2 absolute"
-            style="width: 150px; left: calc(50% - 80px); top: 42%" 
-        >
 
         <p class="text-sm">
             The name’s Bugs. Bugs Bunny. Don’t wear it out. Bugs is an anthropomorphic gray
@@ -55,5 +47,4 @@
     @include('_timeline', [
         'tweets' => $user->tweets
     ])
-{{-- @endsection --}}
 </x-app>

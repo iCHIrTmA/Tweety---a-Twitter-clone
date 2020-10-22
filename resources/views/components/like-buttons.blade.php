@@ -1,6 +1,6 @@
 <div class="flex">
     <form method="POST"
-          action="/tweets/{{ $tweet->id }}/like"
+          action="{{url('tweets/' . $tweet->id . '/like')}}"
     >
         @csrf
 
@@ -30,13 +30,15 @@
         </div>
     </form>
 
+
     <form method="POST"
-          action="/tweets/{{ $tweet->id }}/like"
+          action="{{url('tweets/' . $tweet->id . '/like')}}"
     >
         @csrf
         @method('DELETE')
 
         <div class="flex items-center {{ $tweet->isDislikedBy(current_user()) ? 'text-blue-500' : 'text-gray-500' }}">
+                    
             <svg viewBox="0 0 20 20"
                  class="mr-1 w-3"
             >
@@ -59,6 +61,6 @@
             >
                 {{ $tweet->dislikes ?: 0 }}
             </button>
-        </div>
-    </form>
+          </div>
+        </form>    
 </div>

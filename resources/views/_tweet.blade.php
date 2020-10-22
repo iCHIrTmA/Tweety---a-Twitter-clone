@@ -13,9 +13,14 @@
     </div>
 
     <div>
-        <a href="{{$tweet->user->path()}}">
-            <h5 class="font-bold mb-4">{{$tweet->user->name}}</h5>
-        </a>
+        <h5 class="font-bold mb-4">
+            <a href="{{$tweet->user->path()}}">
+                {{$tweet->user->name}}
+            </a>
+        </h5>
         <p class="text-sm">{{$tweet->body}}</p>
+        @auth
+            <x-like-buttons :tweet="$tweet" />
+        @endauth
     </div>   
 </div>

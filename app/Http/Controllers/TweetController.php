@@ -10,8 +10,8 @@ class TweetController extends Controller
     public function index()
     {
         return view('tweets.index',[
-            'tweets' => auth()->user()->timeline(),
-            'user' => auth()->user()
+            'tweets' => current_user()->timeline(),
+            'user' => current_user()
         ]);
     }
     	
